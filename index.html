@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    
+    <meta charset="utf-8" />
+    <title>unit4game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Our CSS style sheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" /> -->
+
+</head>
+
+<body>
+
+    <!-- <div class = "container"> -->
+
+        <header>
+            <h1>Crystals Collector!</h1>
+        </header>
+
+        <div class="row">
+            <div class = "col-md-7 instruction">
+                <br>
+                <p> You will be given a random number at the start of the game.</p>
+                <p> There are four crystals below. </p>
+                <p> By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+                <p> You win the game by matching your total score to the random number.</p>
+                <p> You lose the game if your total score goes above the random number.</p>
+                <p> The value of each crystal is hidden from you until you click on it.</p>
+                <p> Each time when the game starts, the game will change the values of each crystal.</p>    
+            </div>
+
+            <div class = "col-md-4">
+
+                <div class = "instruction">
+                    <h2 id = "randomNumber"></h2>
+                </div>
+
+                <div class = "instruction">
+                    <h4> Wins: <span id = "wins"></span> </h4>
+                    <h4> Looses: <span id = "looses"></span> </h4>
+                </div>
+
+                <div class="instruction">
+                    <h4>Your total score is: </h4>    
+                </div>
+
+                <div class="instruction">
+                    <h2 id = "totalScore"></h2>    
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div>
+                <img src="assets/images/blue-crystal.png" class=crystalImage id="blue" alt="Blue Gem">
+                <img src="assets/images/green-crystal.png" class=crystalImage id="green" alt="Green Gem">
+                <img src="assets/images/red-crystal.png" class=crystalImage id= "red" alt="Red Gem">
+                <img src="assets/images/orange-crystal.png" class=crystalImage id= "orange" alt="Orange Gem">
+        </div>
+        
+    <!-- </div> -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets//javascript/game.js"></script>
+
+</body>
+</html>

@@ -52,18 +52,22 @@
 
     // Count wins, then restart game to play again.
     function winGame() {
-        alert("Win!");
         countWins++;
         $("#wins").text(countWins);
-        restartGame();
+        $("#totalScore").text(sumScore + "  Win!");
+        setTimeout(function() { // restartGame() will work supper faster right after be called,
+            restartGame();      // so we have to setTimeout to wait totalScore shows number first, then restart game after 2 second.    
+        }, 2000);
     }
 
     // Count looses, then restart game to play again.
     function looseGame() {
-        alert("Loose!");
         countLooses++;
         $("#looses").text(countLooses);
-        restartGame();
+        $("#totalScore").text(sumScore + "  Loose!");
+        setTimeout(function() {
+            restartGame();
+        }, 2000);
     }
 
 
